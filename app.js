@@ -30,7 +30,7 @@ io.sockets.on('connection', (socket)=>{
     }
 
     socket.on('send message', (data)=>{
-        io.sockets.emit('new message', {msg: data, user: socket.username});
+        io.sockets.emit('new message', {msg: data, user: socket.username });
     });
 
     socket.on('disconnect', (data)=>{
